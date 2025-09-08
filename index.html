@@ -1,172 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Green Earth</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/style/style.css">
-</head>
-<body class="bg-[#d4f0de]">
-  <!-- Navbar -->
-   
-  <nav class="bg-[#217e37] text-white flex justify-between items-center px-8 py-3 fixed top-0 left-0 w-full z-50 shadow-md">
-    <div class="font-semibold">Green Earth</div>
-    <ul class="flex space-x-8 text-sm">
-      <li><a href="#" class="hover:underline">About</a></li>
-      <li><a href="#" class="hover:underline">Gallery</a></li>
-      <li><a href="#" class="hover:underline">Plant a Tree</a></li>
-    </ul>
-    <button class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition">
-      Plant a Tree
-    </button>
-</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Earth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
 
+  <body class="bg-[#d4f0de]">
+    <!-- navbar -->
 
-  <!-- Main Section -->
-  <section class="flex items-center justify-center py-16 px-6 relative max-w-7xl mx-auto">
-    <!-- Left Leaf -->
-    <img 
-      src="./assets/hero-leaf1.png" 
-      alt="Left leaf" 
-      class="w-40 object-contain absolute left-6 top-1/2 -translate-y-1/2"
-      style="max-height: 300px;"
-    />
-    
-    <!-- Content -->
-    <div class="max-w-xl text-center mx-12 px-8">
-      <h1 class="text-3xl font-extrabold text-gray-900 mb-3">Plant a Tree, Grow a Future</h1>
-      <p class="text-gray-600 mb-6">
-        Join our mission to plant 1 million trees and make the Earth greener for future generations.
-      </p>
-      <button class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition">
-        Get Involved
-      </button>
-    </div>
-
-    <!-- Right Leaf -->
-    <img 
-      src="./assets/hero-leaf2.png" 
-      alt="Right leaf" 
-      class="w-40 object-contain absolute right-6 top-1/2 -translate-y-1/2 rotate-12"
-      style="max-height: 300px;"
-    />
-  </section>
-
-    <section class="bg-green-50 min-h-screen flex flex-col items-center py-10 font-sans">
-
-        <h1 class="text-center text-gray-800 font-semibold text-lg mb-8">Choose Your Trees</h1>
-
-    <div class="max-w-7xl w-full flex gap-8 px-4">
-
-    <!-- Categories -->
-    <nav class="flex-shrink-0 w-44 text-sm text-gray-700">
-      <ul class="space-y-2">
-        <li><button class="categoryBtn bg-green-900 text-white px-3 py-1 rounded text-left w-full" data-category="all">All Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="fruit">Fruit Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="flowering">Flowering Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="shade">Shade Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="medicinal">Medicinal Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="timber">Timber Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="evergreen">Evergreen Trees</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="ornamental">Ornamental Plants</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="bamboo">Bamboo</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="climbers">Climbers</button></li>
-        <li><button class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full" data-category="aquatic">Aquatic Plants</button></li>
+    <nav
+      class="bg-[#217e37] text-white flex justify-between items-center px-8 py-3 fixed top-0 left-0 w-full z-50 shadow-md"
+    >
+      <div class="font-semibold">Green Earth</div>
+      <ul class="flex space-x-8 text-sm">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Gallery</a></li>
+        <li><a href="#" class="hover:underline">Plant a Tree</a></li>
       </ul>
+      <button
+        class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition"
+      >
+        Plant a Tree
+      </button>
     </nav>
 
-    <!-- Products Grid -->
-    <section id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow max-w-5xl">
-    </section>
+    <!-- Main Section -->
+    <section
+      class="flex items-center justify-center py-16 px-6 relative max-w-7xl mx-auto"
+    >
+      <!-- Left Leaf -->
+      <img
+        src="./assets/hero-leaf1.png"
+        alt="Left leaf"
+        class="w-40 object-contain absolute left-6 top-1/2 -translate-y-1/2"
+        style="max-height: 300px"
+      />
 
-    <!-- Cart -->
-    <aside class="w-64 bg-white rounded-lg p-4 shadow-md flex flex-col">
-      <h2 class="font-semibold text-gray-800 mb-4 text-sm">Your Cart</h2>
-      <ul id="cart-items" class="flex-grow overflow-y-auto space-y-2 text-sm text-gray-700">
-        <!-- Cart items will appear here -->
-      </ul>
-      <div class="mt-4 border-t pt-3 text-gray-800 font-semibold flex justify-between">
-        <span>Total:</span>
-        <span id="cart-total">৳0</span>
+      <!-- Content -->
+      <div class="max-w-xl text-center mx-12 px-8">
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-3">
+          Plant a Tree, Grow a Future
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Join our mission to plant 1 million trees and make the Earth greener
+          for future generations.
+        </p>
+        <button
+          class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition"
+        >
+          Get Involved
+        </button>
       </div>
-    </aside>
 
-  </div>
-
-
-
-
+      <!-- Right Leaf -->
+      <img
+        src="./assets/hero-leaf2.png"
+        alt="Right leaf"
+        class="w-40 object-contain absolute right-6 top-1/2 -translate-y-1/2 rotate-12"
+        style="max-height: 300px"
+      />
     </section>
 
+    <section
+      class="bg-green-50 min-h-screen flex flex-col items-center py-10 font-sans"
+    >
+      <h1 class="text-center text-gray-800 font-semibold text-lg mb-8">
+        Choose Your Trees
+      </h1>
 
+      <div class="max-w-7xl w-full flex gap-8 px-4">
 
+        <!-- Categories -->
+         
+        <nav class="flex-shrink-0 w-44 text-sm text-gray-700">
+          <ul class="space-y-2">
+            <li>
+              <button
+                class="categoryBtn bg-green-900 text-white px-3 py-1 rounded text-left w-full"
+                data-category="all"
+              >
+                All Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="fruit"
+              >
+                Fruit Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="flowering"
+              >
+                Flowering Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="shade"
+              >
+                Shade Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="medicinal"
+              >
+                Medicinal Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="timber"
+              >
+                Timber Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="evergreen"
+              >
+                Evergreen Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="ornamental"
+              >
+                Ornamental Plants
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="bamboo"
+              >
+                Bamboo
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="climbers"
+              >
+                Climbers
+              </button>
+            </li>
+            <li>
+              <button
+                class="categoryBtn hover:bg-green-200 px-3 py-1 rounded text-left w-full"
+                data-category="aquatic"
+              >
+                Aquatic Plants
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Products Grid -->
+        <section
+          id="products"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 flex-grow max-w-5xl"
+        ></section>
+
+        <!-- Cart -->
+        <aside class="w-64 bg-white rounded-lg p-4 shadow-md flex flex-col">
+          <h2 class="font-semibold text-gray-800 mb-4 text-sm">Your Cart</h2>
+          <ul
+            id="cart-items"
+            class="flex-grow overflow-y-auto space-y-2 text-sm text-gray-700"
+          >
+            <!-- Cart items will appear here -->
+          </ul>
+          <div
+            class="mt-4 border-t pt-3 text-gray-800 font-semibold flex justify-between"
+          >
+            <span>Total:</span>
+            <span id="cart-total">৳0</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section
+      class="bg-green-50 min-h-screen flex flex-col items-center py-10 font-sans"
+    >
+      <div>
+        <h2 class="text-center font-bold mb-[40px]">About the Campaign</h2>
+        <div
+          class="flex gap-[30px] justify-center items-center w-[1090px] h-[530px]"
+        >
+          <div>
+            <img src="./assets/about.png" class="w-[530px] h-[530px]" alt="" />
+          </div>
+
+          <div class="w-[530px] h-[140px]">
+            <p>
+              Green Earth is a global tree plantation initiative dedicated to
+              fighting climate change. Since our start, we’ve planted over
+              500,000 trees worldwide. By joining our campaign, you help restore
+              forests, create habitats for wildlife, and combat global warming.
+            </p>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>Restoration of natural habitats</li>
+              <li>Improvement of air quality</li>
+              <li>Support for local communities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our impact -->
     <section class="bg-green-200 text-green-900 py-12">
-    <h2 class="text-center font-semibold text-lg mb-8">Our Impact</h2>
-    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-center gap-6 px-4">
-      <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
-        <p class="font-bold text-green-800 text-xl">500K+</p>
-        <p class="text-sm text-gray-600 mt-1">Trees Planted</p>
-      </div>
-      <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
-        <p class="font-bold text-green-800 text-xl">120+</p>
-        <p class="text-sm text-gray-600 mt-1">Communities Involved</p>
-      </div>
-      <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
-        <p class="font-bold text-green-800 text-xl">30+</p>
-        <p class="text-sm text-gray-600 mt-1">Countries Reached</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Plant a Tree Today Form -->
-  <section class="bg-green-800 py-12 flex flex-col items-center">
-    <h3 class="font-semibold mb-8 text-white text-lg">Plant a Tree Today</h3>
-    <form id="donationForm" class="bg-green-700 p-8 rounded-lg w-full max-w-md space-y-4 shadow">
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Your Name"
-        class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Your Email Address"
-        class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        required
-      />
-      <select
-        name="trees"
-        id="trees"
-        class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        required
+      <h2 class="text-center font-semibold text-lg mb-8">Our Impact</h2>
+      <div
+        class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-center gap-6 px-4"
       >
-        <option value="" disabled selected>Number of Trees</option>
-        <option value="1">1 Tree</option>
-        <option value="5">5 Trees</option>
-        <option value="10">10 Trees</option>
-        <option value="20">20 Trees</option>
-        <option value="50">50 Trees</option>
-      </select>
-      <button
-        type="submit"
-        class="w-full bg-yellow-400 text-green-900 font-semibold py-2 rounded-full hover:bg-yellow-500 transition"
+        <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
+          <p class="font-bold text-green-800 text-xl">500K+</p>
+          <p class="text-sm text-gray-600 mt-1">Trees Planted</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
+          <p class="font-bold text-green-800 text-xl">120+</p>
+          <p class="text-sm text-gray-600 mt-1">Communities Involved</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 flex-1 text-center shadow">
+          <p class="font-bold text-green-800 text-xl">30+</p>
+          <p class="text-sm text-gray-600 mt-1">Countries Reached</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plant a Tree Today Form -->
+    <section class="bg-green-800 py-12 flex flex-col items-center">
+      <h3 class="font-semibold mb-8 text-white text-lg">Plant a Tree Today</h3>
+      <form
+        id="donationForm"
+        class="bg-green-700 p-8 rounded-lg w-full max-w-md space-y-4 shadow"
       >
-        Donate Now
-      </button>
-    </form>
-  </section>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your Name"
+          class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email Address"
+          class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        />
+        <select
+          name="trees"
+          id="trees"
+          class="w-full px-3 py-2 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          required
+        >
+          <option value="" disabled selected>Number of Trees</option>
+          <option value="1">1 Tree</option>
+          <option value="5">5 Trees</option>
+          <option value="10">10 Trees</option>
+          <option value="20">20 Trees</option>
+          <option value="50">50 Trees</option>
+        </select>
+        <button
+          type="submit"
+          class="w-full bg-yellow-400 text-green-900 font-semibold py-2 rounded-full hover:bg-yellow-500 transition"
+        >
+          Donate Now
+        </button>
+      </form>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-900 py-4 text-center text-xs text-gray-300">
-    © 2025 Green Earth. All Rights Reserved.
-  </footer>
-  
+    <!-- Footer -->
+    <footer class="bg-green-900 py-4 text-center text-xs text-gray-300">
+      © 2025 Green Earth. All Rights Reserved.
+    </footer>
 
-  <script src="./JS/javas.js"></script>
-</body>
+    <script src="./JS/javas.js"></script>
+  </body>
 </html>

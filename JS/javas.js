@@ -218,6 +218,12 @@
   document.head.appendChild(style);
 
 
+  // Example vanilla JS for future use: Simple console greeting when the section is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('About the Campaign section loaded');
+  });
+
+
    document.getElementById('donationForm').addEventListener('submit', function (e) {
       e.preventDefault();
 
