@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green Earth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body class="bg-[#d4f0de]">
+  <!-- Navbar -->
+  <nav class="bg-[#217e37] text-white flex justify-between items-center px-8 py-3">
+    <div class="font-semibold">Green Earth</div>
+    <ul class="flex space-x-8 text-sm">
+      <li><a href="#" class="hover:underline">About</a></li>
+      <li><a href="#" class="hover:underline">Gallery</a></li>
+      <li><a href="#" class="hover:underline">Plant a Tree</a></li>
+    </ul>
+    <button class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition">
+      Plant a Tree
+    </button>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="flex items-center justify-center py-16 px-6 relative max-w-7xl mx-auto">
+    <!-- Left Leaf -->
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/4/49/A_green_fern_leaf03.jpg" 
+      alt="Left leaf" 
+      class="w-40 object-contain absolute left-6 top-1/2 -translate-y-1/2"
+      style="max-height: 300px;"
+    />
+    
+    <!-- Content -->
+    <div class="max-w-xl text-center mx-12 px-8">
+      <h1 class="text-3xl font-extrabold text-gray-900 mb-3">Plant a Tree, Grow a Future</h1>
+      <p class="text-gray-600 mb-6">
+        Join our mission to plant 1 million trees and make the Earth greener for future generations.
+      </p>
+      <button class="bg-yellow-400 text-[#333333] px-4 py-1 rounded-full text-sm font-semibold hover:bg-yellow-300 transition">
+        Get Involved
+      </button>
+    </div>
+
+    <!-- Right Leaf -->
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/4/49/A_green_fern_leaf03.jpg" 
+      alt="Right leaf" 
+      class="w-40 object-contain absolute right-6 top-1/2 -translate-y-1/2 rotate-12"
+      style="max-height: 300px;"
+    />
+  </section>
+
+
+  <script src="./JS/javas.js"></script>
+</body>
+</html>
