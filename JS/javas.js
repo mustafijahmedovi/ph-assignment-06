@@ -216,3 +216,29 @@
     }
   `;
   document.head.appendChild(style);
+
+
+   document.getElementById('donationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const trees = this.trees.value;
+
+      if (!name || !email || !trees) {
+        alert('Please fill out all fields.');
+        return;
+      }
+
+      // Basic email validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      alert(`Thank you, ${name}, for planting ${trees} tree(s)!`);
+
+      // Reset form
+      this.reset();
+    });
