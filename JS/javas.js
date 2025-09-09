@@ -7,7 +7,7 @@
       category: "fruit",
       price: 500,
       tag: "Fruit Tree",
-      image: null, // Placeholder for blank image area
+      image: null, 
     },
     {
       id: 2,
@@ -83,21 +83,21 @@
     },
   ];
 
-  // Cart structure: {id, quantity}
+  // Cart structure
   let cart = [];
 
-  // Get references
+  // references
   const productsContainer = document.getElementById("products");
   const cartItemsContainer = document.getElementById("cart-items");
   const cartTotalContainer = document.getElementById("cart-total");
   const categoryButtons = document.querySelectorAll(".categoryBtn");
 
-  // Helper: Format price with currency
+
   function formatPrice(num) {
     return "৳" + num;
   }
 
-  // Render product cards based on category filter
+  // category filter
   function renderProducts(filter = "all") {
     productsContainer.innerHTML = "";
     const filteredTrees = filter === "all" ? trees : trees.filter(t => t.category === filter);
@@ -120,7 +120,7 @@
       productsContainer.appendChild(card);
     });
 
-    // Setup "Add to Cart" buttons
+    // Add to Cart
     const addBtns = document.querySelectorAll(".add-to-cart-btn");
     addBtns.forEach(btn =>
       btn.addEventListener("click", () => {
@@ -130,7 +130,7 @@
     );
   }
 
-  // Add item to cart or increment quantity
+  // Add item to  increment quantity
   function addToCart(id) {
     const existing = cart.find(item => item.id === id);
     if (existing) {
@@ -186,12 +186,12 @@
     cartTotalContainer.textContent = formatPrice(total);
   }
 
-  // Handle category button click
+  //  button click
   categoryButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-      // Remove active class from all
+      
       categoryButtons.forEach(b => b.classList.remove("bg-green-900", "text-white"));
-      // Add active to clicked
+      
       btn.classList.add("bg-green-900", "text-white");
 
       const category = btn.getAttribute("data-category");
@@ -203,8 +203,7 @@
   renderProducts();
   renderCart();
 
-  // Optional: For line-clamp (text truncation), Tailwind's plugin is typically used,
-  // but since CDN doesn't enable it by default, we'll add simple CSS here:
+  
 
   const style = document.createElement("style");
   style.textContent = `
@@ -218,7 +217,7 @@
   document.head.appendChild(style);
 
 
-  // Example vanilla JS for future use: Simple console greeting when the section is loaded
+  
   document.addEventListener('DOMContentLoaded', () => {
     console.log('About the Campaign section loaded');
   });
@@ -245,6 +244,6 @@
 
       alert(`Thank you, ${name}, for planting ${trees} tree(s)!`);
 
-      // Reset form
+      
       this.reset();
     });
